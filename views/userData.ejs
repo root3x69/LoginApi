@@ -1,0 +1,17 @@
+<%- include ("partials/header") %>
+    <div class="ui main text container">
+        <div class="ui huge header">All Users</div>
+        <div class="ui divided items">
+            <% users.forEach((user) => { %>
+                <div class="item">
+                    <div class="content">
+                        <h3><%=user.username%></h3>
+                        <p>Email: <%=user.email%></p>
+                        <p>Phone No: <%=user.phone%></p>
+                        <p>Date of Birth: <%=user.DOB.toDateString()%></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+<%- include ("partials/footer") %>

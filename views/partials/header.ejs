@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+        <link  rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+        <title>LoginAuthApi</title>
+    </head>
+    <body>
+        <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <div class="header item"><i class="code icon"></i>LOGIN/REGISTER API</div>
+                <a href="/" class="item">Home</a>
+                <div class="right menu">
+                    <% if(isAuthenticated) {%>
+                        <a href="/users" class="item">Users</a>
+                        <a href="/logout" class="item">Logout</a>
+                    <% } else { %>
+                    <a href="/register" class="item">Sign Up</a>
+                    <a href="/login" class="item">Login</a>
+                    <% } %>
+                </div>
+            </div>
+        </div>

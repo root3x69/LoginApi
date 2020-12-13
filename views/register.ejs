@@ -1,0 +1,28 @@
+<%- include ("partials/header") %>
+    <div class="ui main text container">
+        <div class="ui huge header">Sign Up</div>
+        <form class="ui form" action="/users" method="POST">
+            <div class="field">
+                <label for="user-name">Name</label>
+                <input type="text" name="username" id="user-name" placeholder="Username" required>
+            </div>
+            <div class="field">
+                <label for="user-email">Email</label>
+                <input type="email" name="email" id="user-email" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+                <label for="user-password">Password</label>
+                <input type="password" name="password" id="user-password" placeholder="Password" required>
+            </div>
+            <div class="field">
+                <label for="user-mob">Phone</label>
+                <input type="tel" name="phone" id="user-mob" placeholder="Phone No" pattern="[0-9]{10}" required>
+            </div>
+            <div class="field">
+                <label for="user-dob">DOB</label>
+                <input type="date" name="DOB" id="user-dob" required>
+            </div>
+            <button class="ui blue big basic button">Submit</button>
+        </form>
+    </div>
+<%- include ("partials/footer") %>
