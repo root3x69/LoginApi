@@ -2,6 +2,8 @@
 
 ## Server command
 
+* Rename .env-example to .env
+
 `npm run-script build`
 
 ## Technology and packages used
